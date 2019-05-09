@@ -8,6 +8,7 @@ const color = {
 
 module.exports = {
   require: ['babel-polyfill', path.join(__dirname, 'src/styles/styles.scss')],
+  ignore: ['**/*.test.tsx', '**/components/Tabs/TabItem.tsx'],
   styleguideDir: 'docs',
   theme: {
     maxWidth: '100%',
