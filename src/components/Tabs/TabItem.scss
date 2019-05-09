@@ -1,0 +1,16 @@
+@import "../../styles/_variables";
+
+.tab-item {
+  padding: 10px 15px;
+  border-radius: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: $common-text-color;
+  &:hover {
+    background: lighten($color: $default-color, $amount: 5);
+  }
+  &.active {
+    background: $primary-color;
+    color: #fff;
+  }
+}
