@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 export interface IButtonProps {
   text?: string;
-  variant: 'primary' | 'secondary' | 'default';
+  variant?: 'primary' | 'secondary' | 'default';
   rounded?: boolean;
   state?: 'warning' | 'alert';
 }
