@@ -1,0 +1,46 @@
+@import './_variables';
+
+.navbar {
+  padding: 5px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 1px 3px 10px 0px $shadow-color;
+  flex-direction: row;
+  justify-content: space-between;
+  .logo {
+    padding: 10px;
+    margin-right: 40px;
+  }
+  .left {
+    display: inherit;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right {
+    align-self: center;
+    padding: 14px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    li {
+
+      a {
+        color: inherit;
+        padding: 20px;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        &:hover {
+          color: $primary-color;
+        }
+        &.active {
+          border-bottom: 2px solid $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

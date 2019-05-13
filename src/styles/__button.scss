@@ -3,7 +3,8 @@
 .btn {
   cursor: pointer;
   padding: 10px;
-  outline: none;
+  margin: 8px;
+  outline: none !important;
   border: none;
   color: $common-text-color;
   border-radius: 3px;

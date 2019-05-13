@@ -1,0 +1,33 @@
+@import './_variables';
+html {
+  color: $common-text-color;
+}
+
+.rounded {
+  padding: 10px 15px;
+  border-radius: 50px;
+}
+
+.sp-20 {
+  padding: 20px;
+}
+
+.sp-10 {
+  padding: 10px
+}
+
+.sp-5 {
+  padding: 5px;
+}
+
+.elevation-3 {
+  box-shadow: 2px 2px 3px $shadow-color;
+}
+
+.elevation-4 {
+  box-shadow: 3px 3px 4px $shadow-color;
+}
+
+.elevation-5 {
+  box-shadow: 4px 4px 5px $shadow-color;
+}
