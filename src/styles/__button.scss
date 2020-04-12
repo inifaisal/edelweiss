@@ -8,7 +8,7 @@
   border: none;
   color: $common-text-color;
   border-radius: 3px;
-
+  background-color: transparent;
   &:hover {
     background: darken($color: $default-color, $amount: 10);
   }

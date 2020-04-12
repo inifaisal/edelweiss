@@ -1,6 +1,7 @@
-@import 'node_modules/css-reset-and-normalize/scss/reset-and-normalize';
+@import "node_modules/css-reset-and-normalize/scss/reset-and-normalize";
 
 @import "./_button";
 @import "./_card";
-@import './_navbar';
+@import "./_navbar";
+@import "./_modal";
 @import "./_core";

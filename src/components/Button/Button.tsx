@@ -1,20 +1,15 @@
 import React, { Component } from 'react';
 
 import classNames from 'classnames';
-//import './Button.scss';
 
-export interface IButtonProps {
+export type ButtonProps = {
   text?: string;
-  variant?: 'primary' | 'secondary' | 'default';
+  variant?: 'primary' | 'secondary';
   rounded?: boolean;
   state?: 'warning' | 'alert';
-}
+};
 
-class Button extends Component<IButtonProps> {
-  static defaultProps: IButtonProps = {
-    variant: 'default',
-  };
-
+class Button extends Component<ButtonProps> {
   render() {
     const { variant, state, rounded, ...otherProps } = this.props;
     const btnCls: string = classNames(

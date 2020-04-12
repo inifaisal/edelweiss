@@ -3,5 +3,5 @@
 .tabs {
   display: flex;
   flex-direction: row;
-  padding: 10px 0;
+  box-shadow: 2px 2px 3px $shadow-color;
 }

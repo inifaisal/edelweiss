@@ -12,14 +12,32 @@ module.exports = {
     path.join(__dirname, 'src/styles/styles.scss'),
     path.join(__dirname, 'src/styles/styleguide.scss'),
   ],
-  ignore: [
-    '**/*.spec.tsx',
-    '**/components/Tabs/TabItem.tsx',
-    '**/components/Navbar/NavbarItem.tsx',
+  ignore: ['**/*.spec.tsx'],
+  sections: [
+    {
+      content: 'README.md',
+    },
+    {
+      name: 'Components',
+      components: () => [
+        path.resolve(__dirname, 'src/components/Button', 'Button.tsx'),
+        path.resolve(__dirname, 'src/components/Card', 'Card.tsx'),
+        path.resolve(__dirname, 'src/components/Navbar', 'Navbar.tsx'),
+        path.resolve(__dirname, 'src/components/Tabs', 'Tabs.tsx'),
+      ],
+    },
+    {
+      name: 'Form',
+      components: () => [
+        path.resolve(__dirname, 'src/components/Form', 'TextInput.tsx'),
+        path.resolve(__dirname, 'src/components/Card', 'Card.tsx'),
+        path.resolve(__dirname, 'src/components/Card', 'Card.tsx'),
+      ],
+    },
   ],
   styleguideDir: 'docs',
   theme: {
-    maxWidth: '100%',
+    maxWidth: 780,
     sidebarWidth: 250,
     fontFamily: {
       base: [
