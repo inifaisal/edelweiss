@@ -26,7 +26,7 @@
     "awesome-typescript-loader": "^5.2.1",
     "classnames": "^2.2.6",
     "css-reset-and-normalize": "^2.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react-styleguidist": "^9.0.5",
     "ts-loader": "^5.4.3",
     "webpack": "^4.29.6"
